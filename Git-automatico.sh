@@ -10,11 +10,17 @@
 #para rodar ./Git-automatico.sh
 ###########################################
 #---------------- VARIAVEIS --------------------------------#
-ADD=$(git add *)
-ATUALIZA=$(git commit -m * "Upload de arquivos feitos - $(date)" )
+
 #------------------------ FUNÇÃO ---------------------------#
 #------------------------ EXECUÇÃO -------------------------#
-clear
+#clear
 
 echo "Iniciando atualizacao automatica do github"
 echo
+echo "Adicionando arquivos e modificações $(git add *)"
+echo
+echo "Efetuando commit! $(git commit -m  "adicionado")"
+echo
+echo "Efetuando Upload de arquivos" $(git push -u origin master)
+echo
+echo "Atualizacao feita com sucesso - $(date)" >> Git-automatico.log
