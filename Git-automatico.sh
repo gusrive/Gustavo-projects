@@ -13,7 +13,6 @@
 LOG="/tmp/Git-automatico.log"
 #------------------------ FUNÇÃO ---------------------------#
 #------------------------ EXECUÇÃO -------------------------#
-#clear
 
 echo "Iniciando atualizacao automatica do github"
 echo
