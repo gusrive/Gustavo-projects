@@ -10,7 +10,7 @@
 #para rodar ./Git-automatico.sh
 ###########################################
 #---------------- VARIAVEIS --------------------------------#
-
+LOG="/tmp/Git-automatico"
 #------------------------ FUNÇÃO ---------------------------#
 #------------------------ EXECUÇÃO -------------------------#
 #clear
@@ -23,4 +23,4 @@ echo "Efetuando commit! $(git commit -m  "adicionado")"
 echo
 echo "Efetuando Upload de arquivos" $(git push -u origin master)
 echo
-echo "Atualizacao feita com sucesso - $(date)" >> Git-automatico.log
+echo "Atualizacao do git feita com sucesso - $(date)" >> $LOG
