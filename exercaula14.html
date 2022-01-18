@@ -4,24 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hora do dia</title>
-    <link rel="stylesheet" href="estilo.css">
+    <title>Contagem</title>
+    <link rel="stylesheet" href="exercaula14.css">
 </head>
-<body onload="carregar()">
+<body>
     <header>
-        <h1>Hora do Dia</h1>
+        <h1>Vamos contar</h1>
     </header>
     <section>
-        <div id="msg">
-            Aqui vai aparecer a mensagem...
+        <div id="info"> 
+            Início : <input type="number" name="v1" id="v1"> 
+            <p></p>
+            Fim : <input type="number" name="v2" id="v2">
+            <p></p>
+            Passo : <input type="number" name="passo" id="passo">
+            <p></p>
+            <input type="button" value="Contar" onclick="contar()">
         </div>
-        <div id="foto">
-            <img src="manhã.png" alt="foto do dia">
+        <div id="res">
+
         </div>
     </section>
     <footer>
         <p>&copy; CursoemVideo</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="exercaula14.js"></script>
 </body>
 </html>

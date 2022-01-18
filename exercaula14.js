@@ -1,17 +1,26 @@
-function carregar(){
-    var msg = window.document.getElementById('msg')
-    var img = window.document.getElementById('foto')
-    var data = new Date()
-    var hora = data.getHours()
-    msg.innerHTML = `Agora são ${hora} horas`
-    if (hora >= 0 && hora < 12){
-        //BOM DIA
-        img.src = 'manhã.png'
-    } else if (hora >= 12 && hora < 18) {
-        //BOA TARDE
-        img.src = 'tarde.png'
-    } else {
-        // BOA NOITE
-        img.src = 'noite.png'
+function contar() {
+    var txtn1 = window.document.querySelector('input#v1')
+    var txtn2 = window.document.querySelector('input#v2')
+    var txtpasso = window.document.querySelector('input#passo')
+    var res = window.document.querySelector('div#res')
+    var inicio = Number(txtn1.value) // Mudando para número inteiro
+    var fim = Number(txtn2.value) // Mudando para número inteiro
+    var passo = Number(txtpasso.value) // Mudando para número inteiro
+
+
+    
+    for(var v1=inicio;v1<=fim;inicio = v1+passo){
+        res.innerHTML = '<p>Contando</p>'
+        res.innerHTML = `<p> ${v1}</p>`
     }
+         
 }
+
+
+
+
+
+
+
+
+
