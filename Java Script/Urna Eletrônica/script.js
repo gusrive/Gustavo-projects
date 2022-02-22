@@ -10,6 +10,7 @@ let numeros = document.querySelector('.d-1-3');
 let etapaAtual = 0;
 let numero = '';
 let vtBranco = false
+let votos = []
 
 function iniciaEtapa (){ 
     let etapa = etapas[etapaAtual];
@@ -111,10 +112,16 @@ function btconfirma() {
 
     if (vtBranco === true){
         votoConfirmado = true
-        console.log("Confirmado como Branco")
+        votos.push({
+            etapa: etapas[etapaAtual].titulo,
+            voto: 'branco'
+        });
     } else if (numero.length === etapa.numero){
         votoConfirmado = true
-        console.log('Confirmado com '+numero)
+        votos.push({
+            etapa: etapas[etapaAtual].titulo,
+            voto: numero
+        });
 }
     if(votoConfirmado){
         etapaAtual++;
