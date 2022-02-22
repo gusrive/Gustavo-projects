@@ -116,13 +116,15 @@ function btconfirma() {
             etapa: etapas[etapaAtual].titulo,
             voto: 'branco'
         });
-    } else if (numero.length === etapa.numero){
+    } else if (numero.length === etapa.numeros){
         votoConfirmado = true
         votos.push({
             etapa: etapas[etapaAtual].titulo,
             voto: numero
         });
-}
+        
+    }
+    
     if(votoConfirmado){
         etapaAtual++;
         if(etapas[etapaAtual] !== undefined){
