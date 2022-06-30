@@ -106,3 +106,4 @@ class ValidaFormulario {
 }
 
 const valida = new ValidaFormulario();
+// Pode ser usado dentro de um formulário para validar o cpf
