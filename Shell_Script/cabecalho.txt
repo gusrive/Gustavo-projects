@@ -4,7 +4,7 @@
 # Script de porcentagem de uso dos diretórios /dev
 #
 #
-#Gustavo Sousa 29/01/2021
+#Gustavo Sousa 08/01/2024
 #
 #
 #para rodar ./Crontab_dev.sh
